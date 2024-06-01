@@ -16,6 +16,8 @@ public class Login extends JFrame{
     private JLabel user;
     private JLabel pass;
     private JButton crearNuevoUsuarioButton;
+    private JLabel icono;
+    private JLabel entrar;
 
     public Login(){
         setContentPane(MainPanel);
@@ -23,6 +25,9 @@ public class Login extends JFrame{
         setSize(500, 400);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
+
+        insertarIcono("src/agregar-usuario.png",icono);
+        insertarIcono("src/entrar.png",entrar);
 
         setVisible(true);
 
@@ -99,6 +104,17 @@ public class Login extends JFrame{
             }
         });
     }
+    public void insertarIcono(String ruta,JLabel icono){
+        ImageIcon imageIcon = new ImageIcon(ruta);
+        Image image = imageIcon.getImage();
+        Image newimg = image.getScaledInstance(50, 50,  java.awt.Image.SCALE_SMOOTH);
+        imageIcon = new ImageIcon(newimg);
+        icono.setIcon(imageIcon); // Agrega el icono al JLabel
+    }
+
+
+
+    // Path: src/Register.java
     public class Register extends JFrame {
         private JTextField nombresField;
         private JTextField apellidosField;
