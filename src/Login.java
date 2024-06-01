@@ -116,12 +116,12 @@ public class Login extends JFrame{
 
     // Path: src/Register.java
     public class Register extends JFrame {
-        private JTextField nombresField;
-        private JTextField apellidosField;
-        private JTextField email;
-        private JPasswordField password;
-        private JButton registerButton;
-        private JButton returnButton;
+        private final JTextField  nombresField;
+        private final JTextField apellidosField;
+        private final JTextField email;
+        private final JPasswordField password;
+        private final JButton registerButton;
+        private final JButton returnButton;
         public Register() {
             final String[] nombres = new String[1];
             final String[] apellidos = new String[1];
@@ -263,9 +263,7 @@ public class Login extends JFrame{
             JOptionPane.showMessageDialog(new JFrame(), "Contraseña es requerida", "Dialog", JOptionPane.ERROR_MESSAGE);
         }
         else{
-            if(validarCorreo(correo)){
-                return true;
-            }
+            return validarCorreo(correo);
         }
         return false;
     }
