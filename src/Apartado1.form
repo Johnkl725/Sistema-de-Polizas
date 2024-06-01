@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Apartado1">
+  <grid id="27dc6" binding="panel1" default-binding="true" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="89" y="20" width="431" height="369"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <component id="7d244" class="javax.swing.JLabel">
+        <constraints border-constraint="North"/>
+        <properties>
+          <font name="CourierThai" size="24"/>
+          <horizontalAlignment value="0"/>
+          <text value="Menu de opciones"/>
+          <verticalAlignment value="0"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
